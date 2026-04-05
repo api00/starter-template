@@ -1,53 +1,67 @@
-# Modern AI SaaS Starter
+# AI Music Video Generators
 
-A premium, minimalist Next.js 16 starter template optimized for high-velocity AI-driven software development.
+`aimusicvideogenerators.com` is a Next.js 16 content site being built to own search intent around AI music video generators and route high-intent traffic toward Revid.
 
-## 🚀 Features
+## Project Thesis
 
-- **Next.js 16 (App Router)** — Leveraging the latest React 19 features (use, transitions, Server Components).
-- **Tailwind CSS v4** — Ultra-fast, modern CSS utility framework with oklch design tokens.
-- **shadcn/ui** — Beautiful, accessible primitives designed with Radix UI.
-- **AI-Native Setup** — Organized folder structure and `AGENTS.md` rules specifically for AI coding agents.
-- **Strict TypeScript** — Type safety by default across the entire stack.
-- **Minimalist Aesthetic** — High density, calm hierarchy, and smooth micro-animations.
+The site should behave like a credible authority hub:
 
-## 🛠️ Getting Started
+- own broad intent with a curated homepage
+- win commercial intent with a best-of page
+- support rankings with reviews, comparisons, and tutorials
+- keep Revid visible throughout the funnel without making pages feel like thin affiliate content
 
-First, install dependencies:
+## Current State
+
+- The codebase is still an early scaffold.
+- The root docs now describe the intended product and agent workflow.
+- The next implementation phase should replace the generic starter content with the actual site structure and copy.
+
+## Planned Page Map
+
+- `/` broad landing page for `ai music video generator` intent
+- `/best-ai-music-video-generators` as the main comparison page
+- `/reviews/[tool]` for individual tool reviews
+- `/compare/[slug]` or `/vs/[slug]` for head-to-head comparisons
+- `/how-to/[slug]` for tutorial and informational content
+- `/free/[slug]` for modifier-driven supporting pages where the search demand is real
+
+Keep route names short, readable, and aligned with search intent.
+
+## Tech Stack
+
+- Next.js 16 App Router
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Lucide and shadcn primitives where useful
+
+## Local Development
 
 ```bash
 npm install
-```
-
-Then, run the development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📁 Project Structure
+Useful checks:
 
 ```bash
-src/
-  app/              # Routes and layouts
-  components/       # UI components and primitives
-  hooks/            # Custom React hooks
-  lib/              # Shared utilities (cn, etc.)
-  types/            # TypeScript definitions
-public/
-  images/           # Static image assets
-  seo/              # Favicons and OG images
-scripts/            # Maintenance and sync scripts
+npm run lint
+npm run typecheck
+npm run check
 ```
 
-## 🤖 AI Workflow
+## Working Rules
 
-This template includes an `AGENTS.md` file that acts as a blueprint for AI coding assistants. It helps them understand the tech stack conventions and design principles of the project.
+- Use real, benefit-driven copy. No placeholders.
+- Verify tool claims before publishing comparison content.
+- Prefer semantic, accessible, metadata-rich pages.
+- Keep the repo simple. Avoid unnecessary abstractions and folders.
+- Update `HANDOVER.md` after material work so the next agent can continue cleanly.
 
-- **Sync Rules**: Run `bash scripts/sync-agent-rules.sh` to update platform-specific instruction files (Cursor, Claude, etc.).
+## Agent Docs
 
-## 📜 License
-
-MIT
+- `AGENTS.md`: stable project rules and build constraints
+- `HANDOVER.md`: live project brief and current priorities
+- `HANDOVER_TEMPLATE.md`: reusable session handoff template
+- `CLAUDE.md`: Claude entrypoint into the shared docs
